@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        /* Similar styling to index.html */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .header {
+            text-align: right;
+        }
+        .header a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #1a0dab;
+            font-weight: bold;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #dfe1e5;
+            border-radius: 10px;
+        }
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #dfe1e5;
+            font-size: 16px;
+        }
+        .form-container input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 5px;
+            border: none;
+            background-color: #1a73e8;
+            color: white;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #155bb5;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Google Search</a>
+        <a href="image.html">Image Search</a>
+    </div>
+
+    <div class="form-container">
+        <form action="https://www.google.com/search" method="GET">
+            <label>Find pages with…</label><br>
+            <input type="text" name="as_q" placeholder="all these words"><br>
+            <input type="text" name="as_epq" placeholder="this exact word or phrase"><br>
+            <input type="text" name="as_oq" placeholder="any of these words"><br>
+            <input type="text" name="as_eq" placeholder="none of these words"><br>
+            <input type="submit" value="Advanced Search">
+        </form>
+    </div>
+</body>
+</html>
